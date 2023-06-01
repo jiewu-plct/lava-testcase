@@ -2,7 +2,8 @@
 
 set -x
 
-git clone https://github.com/kdlucas/byte-unixbench.git
-cd byte-unixbench/UnixBench
+wget https://github.com/kdlucas/byte-unixbench/archive/refs/heads/master.zip
+unzip master.zip
+cd byte-unixbench-master/UnixBench
 make
 ./Run
