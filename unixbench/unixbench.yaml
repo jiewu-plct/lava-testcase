@@ -1,0 +1,22 @@
+metadata:
+  name: unixbench
+  format: "Lava-Test Test Definition 1.0"
+  description: "Run unixbench on RISC-V device"
+  maintainer:
+    - wujie22@iscas.ac.cn
+  os:
+    - openEuler-riscv64
+  scope:
+      - system
+  devices:
+    - sifive-unmatched
+    - lichee-RV
+    - D1
+run:
+  steps:
+    - ./setup-test.sh
+    - cd unixbench
+    - ./unixbench.sh
+       
+    
+
