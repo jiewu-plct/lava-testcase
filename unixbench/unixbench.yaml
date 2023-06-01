@@ -14,9 +14,9 @@ metadata:
     - D1
 run:
   steps:
-    - ./setup-test.sh
+    - sh setup-test.sh
     - cd unixbench
-    - ./unixbench.sh
+    - sh unixbench.sh
        
     
 
