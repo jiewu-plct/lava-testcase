@@ -14,7 +14,7 @@ metadata:
     - D1
 run:
   steps:
-    - lava-test-case setup-env --shell sh setup-env.sh
+    - sh setup-env.sh
     - cd unixbench
     - lava-test-case unixbench-system-test --shell sh unixbench.sh
        
